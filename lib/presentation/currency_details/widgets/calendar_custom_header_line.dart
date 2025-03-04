@@ -39,7 +39,6 @@ class CalendarCustomHeaderLine extends StatelessWidget {
           title: DateFormat.yMMMM().format(focusedDay),
         ),
         // Right Chevron (Next Month)
-
         DateTime(focusedDay.year, focusedDay.month + 1, focusedDay.day)
                 .isBefore(nowDate)
             ? IconButton(

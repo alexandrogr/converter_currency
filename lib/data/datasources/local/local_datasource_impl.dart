@@ -2,9 +2,8 @@ import 'dart:async';
 
 import 'package:currency_calculator/core/database/local_cache.dart';
 import 'package:currency_calculator/core/database/local_database.dart';
-import 'package:currency_calculator/core/helpers/date_helper.dart';
 import 'package:currency_calculator/core/utils/log_mixin.dart';
-import 'package:currency_calculator/data/datasources/abstract_datasource.dart';
+import 'package:currency_calculator/data/datasources/abstract_local_datasource.dart';
 import 'package:currency_calculator/data/models/currency_converter/currency_model.dart';
 import 'package:currency_calculator/data/models/currency_converter/currency_rate_model.dart';
 import 'package:currency_calculator/data/models/currency_details/currency_rate_by_date_model.dart';
@@ -14,7 +13,7 @@ import 'package:drift/drift.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
-class LocalDataSourceImpl extends AbstractDataSource with LogMixin {
+class LocalDataSourceImpl extends AbstractLocalDataSource with LogMixin {
   final LocalDatabase database;
   final LocalCache cache;
   LocalDataSourceImpl(this.database, this.cache);
@@ -194,7 +193,7 @@ class LocalDataSourceImpl extends AbstractDataSource with LogMixin {
     required DateTime dateFrom,
     required DateTime dateTo,
   }) {
-    return "getExchangeCurrencyByDate:ex.$exchangeId:cb.$currencyBase:ct.$currencyTo:df.${DateHelper.formatDate(dateFrom)}:dt.${DateHelper.formatDate(dateTo)}";
+    return "getExchangeCurrencyByDate:ex.$exchangeId:cb.$currencyBase:ct.$currencyTo:df.${dateFrom.millisecondsSinceEpoch}:dt.${dateTo.millisecondsSinceEpoch}";
   }
 
   bool saveExchangeCurrencyByDate({

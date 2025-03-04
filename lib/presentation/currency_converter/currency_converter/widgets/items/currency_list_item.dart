@@ -64,7 +64,6 @@ class CurrencyListItem extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                          // "${(items[index].valueByRate).toStringAsFixed(2)} ${items[index].code}"),
                           "${NumberHelper.numberFormat(valueCalculated)} $currencyCodeTo"),
                       Text(
                         "$currencyNameTo",

@@ -27,8 +27,6 @@ class FilterCurrencyButton extends StatelessWidget {
           style: TextStyle(
             fontSize: 12.0,
             color: AppTheme.hintTextColor,
-            // color: AppTheme.primaryColor,
-            // fontWeight: FontWeight.bold,
           ),
         ),
         GestureDetector(
@@ -42,7 +40,7 @@ class FilterCurrencyButton extends StatelessWidget {
                   BorderRadius.circular(AppTheme.inputBorderRadius - 2.0),
               border: Border.all(
                 color: AppTheme.defaultBorderInputColor,
-                width: 1.5, // Border thickness
+                width: 1.5,
               ),
             ),
             child: Column(

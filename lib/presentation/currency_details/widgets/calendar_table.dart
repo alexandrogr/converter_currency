@@ -40,8 +40,6 @@ class CalendarTable extends StatelessWidget {
           // currentDay: _currentDate,
           selectedDayPredicate: (day) => isSameDay(selectedDay, day),
           onDaySelected: (selectedDay, focusedDay) {
-            // Handle date selection
-
             if (!isLoadingData) {
               onSelectedDay.call(
                   this.selectedDay == selectedDay ? null : selectedDay,
@@ -78,7 +76,6 @@ class CalendarTable extends StatelessWidget {
                 CalendarItemCurrencyDetails(
               itemsByDates: itemsByDates,
               day: day,
-              // isSelected: day == selectedDay,
               isSelected: true,
             ),
           ),

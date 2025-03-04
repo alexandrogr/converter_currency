@@ -3,17 +3,15 @@ import 'dart:math';
 
 import 'package:currency_calculator/core/constants/constants.dart';
 import 'package:currency_calculator/core/network/dio_client_remote.dart';
-import 'package:currency_calculator/data/datasources/abstract_datasource.dart';
+import 'package:currency_calculator/data/datasources/abstract_remote_datasource.dart';
 import 'package:currency_calculator/data/models/currency_converter/currency_model.dart';
 import 'package:currency_calculator/data/models/currency_converter/currency_rate_model.dart';
 import 'package:currency_calculator/data/models/currency_details/currency_rate_by_date_model.dart';
-import 'package:currency_calculator/data/models/history/history_model.dart';
-import 'package:currency_calculator/data/models/history/history_result_item_model.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 
 @injectable
-class RemoteDataSourceDemo extends AbstractDataSource {
+class RemoteDataSourceDemo extends AbstractRemoteDataSource {
   final DioClientRemote client;
   RemoteDataSourceDemo(this.client);
 
@@ -68,24 +66,6 @@ class RemoteDataSourceDemo extends AbstractDataSource {
     }
   }
 
-//   {
-//   "date": "2023-03-21 12:43:00+00",
-//   "base": "USD",
-//   "rates": {
-//     "AGLD": "2.3263929277654998",
-//     "FJD": "2.21592",
-//     "MXN": "18.670707655673546",
-//     "LVL": "0.651918",
-//     "SCR": "13.21713243157135",
-//     "CDF": "2068.490771",
-//     "BBD": "2.0",
-//     "HNL": "24.57644632001569",
-//     .
-//     .
-//     .
-//   }
-// }
-
   @override
   Future<List<CurrencyRateModel>> getExchangeRates({
     required int exchangeId,
@@ -117,42 +97,6 @@ class RemoteDataSourceDemo extends AbstractDataSource {
     } else {
       throw Exception("Failed to load exchange rates");
     }
-
-    // final response = await client.dio.get(
-    //   '${ApiConstants.baseUrl}/latest',
-    //   queryParameters: {
-    //     'base_currency': baseCurrency,
-    //     'apikey': ApiConstants.apiKey,
-    //   },
-    // );
-
-    // if (response.statusCode == 200) {
-    //   List<dynamic> rates = response.data['data'];
-    //   return rates.map((rateData) => CurrencyModel.fromJson(rateData)).toList();
-    // } else {
-    //   throw Exception("Failed to load exchange rates");
-    // }
-  }
-
-  @override
-  Future<void> addRatesToHistory({
-    required int exchangeId,
-    required String? exchangeTitle,
-    required String currencyCodeFrom,
-    required String? currencyNameFrom,
-    required String? currencyCodeTo,
-    required String? currencyNameTo,
-    required double? value,
-    required List<HistoryResultItemModel> items,
-  }) {
-    // TODO: implement addRatesToHistory
-    throw UnimplementedError();
-  }
-
-  @override
-  Future<List<HistoryModel>> getRatesHistory({int limit = 100}) {
-    // TODO: implement getRatesHistory
-    throw UnimplementedError();
   }
 
   @override

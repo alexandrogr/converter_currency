@@ -12,11 +12,4 @@ class CurrencyState with _$CurrencyState {
   const factory CurrencyState.error(FilterStateData form, String error) =
       _ErrorCurrencyState;
   const factory CurrencyState.empty(FilterStateData form) = _EmptyCurrencyState;
-
-  // List<CurrencyRate> filteredItems(FilterStateData? form) {
-  //   return maybeWhen(
-  //     orElse: () => [],
-  //     loaded: (form, items) => form != null ? items : items,
-  //   );
-  // }
 }

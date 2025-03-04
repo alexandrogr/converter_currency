@@ -127,15 +127,6 @@ class FilterContainer extends StatelessWidget {
                         },
                       ),
                     ),
-                    // if use api we need execute only one size
-                    // if (filterCurrencyCubit.state.form.hasValue)
-                    //   CupertinoButton(
-                    //     child: Text("Get value"),
-                    //     onPressed: () {
-                    //       FocusScope.of(context).unfocus();
-                    //       onCalculate.call(filterCurrencyCubit.state.form);
-                    //     },
-                    //   ),
                   ],
                 )
             ],

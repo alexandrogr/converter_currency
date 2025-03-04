@@ -23,10 +23,8 @@ class CalendarItemCurrencyDetails extends StatelessWidget {
       padding: const EdgeInsets.all(4.0),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: !isSelected
-              ? Colors.transparent
-              : AppTheme.primaryColor, // Set the background color
-          borderRadius: BorderRadius.circular(8), // Set rounded corners
+          color: !isSelected ? Colors.transparent : AppTheme.primaryColor,
+          borderRadius: BorderRadius.circular(8),
         ),
         child: AspectRatio(
           aspectRatio: 1.0,
@@ -35,8 +33,7 @@ class CalendarItemCurrencyDetails extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                // '${day.day}/${day.month}', // Первая дата
-                '${day.day}', // Первая дата
+                '${day.day}',
                 style: TextStyle(
                     fontSize: 10,
                     color: isSelected ? Colors.white : Colors.grey),

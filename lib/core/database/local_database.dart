@@ -16,16 +16,6 @@ class SupportedCurrencyTable extends Table {
   DateTimeColumn get createdAt => dateTime().nullable()();
 }
 
-// class CurrencyItems extends Table {
-//   IntColumn get id => integer().autoIncrement()();
-//   // TextColumn get title => text().withLength(min: 6, max: 32)();
-//   TextColumn get code => text().named('code')();
-//   TextColumn get currencyName => text().named('currency_name')();
-//   TextColumn get countryCode => text().named('country_code')();
-//   TextColumn get countryName => text().named('country_name')();
-//   DateTimeColumn get createdAt => dateTime().nullable()();
-// }
-
 class HistoryTable extends Table {
   IntColumn get id => integer().autoIncrement()();
   IntColumn get exchangeId => integer().named('exchange_id')();
@@ -82,15 +72,4 @@ class LocalDatabase extends _$LocalDatabase {
           driftWorker: Uri.parse('drift_worker.js'),
         ));
   }
-
-  // LazyDatabase _openConnection() {
-  //   return LazyDatabase(() async {
-  //     // put the database file, called db.sqlite here, into the documents folder
-  //     // for our app.
-  //     final dbFolder = await getApplicationSupportDirectory();
-  //     // setup the db file's path
-  //     final file = File(p.join(dbFolder.path, 'book.db'));
-  //     return NativeDatabase.createInBackground(file);
-  //   });
-  // }
 }

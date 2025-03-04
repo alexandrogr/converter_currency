@@ -81,15 +81,6 @@ class SupportedCurrenciesItem extends StatelessWidget {
             //     onChanged: (value) {
             //       onTap.call();
             // }),
-            // MainCheckbox(
-            //   isChecked:
-            //       _filteredItems[index] == _selectedValue,
-            //   onChanged: (value) {
-            //     _selectedValue =
-            //         value ? _filteredItems[index] : null;
-            //     setState(() {});
-            //   },
-            // )
           ],
         ),
       ),

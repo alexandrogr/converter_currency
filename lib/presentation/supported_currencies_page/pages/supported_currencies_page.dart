@@ -81,8 +81,7 @@ class _SupportedCurrenciesPageState extends State<SupportedCurrenciesPage> {
                 slivers: [
                   SliverToBoxAdapter(
                     child: Padding(
-                      padding: EdgeInsets.all(8), // Padding of 8
-
+                      padding: EdgeInsets.all(8),
                       child: Column(
                         spacing: AppTheme.defaultSpace,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -100,11 +99,6 @@ class _SupportedCurrenciesPageState extends State<SupportedCurrenciesPage> {
                               }
                             }),
                           ),
-                          // MainTitleHeader(
-                          //   title: "Available currencies",
-                          //   textAlign: TextAlign.start,
-                          //   padding: EdgeInsets.only(bottom: 2.0, top: 8.0),
-                          // ),
                         ],
                       ),
                     ),

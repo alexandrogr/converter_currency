@@ -24,6 +24,33 @@ The Currency Converter App is a Flutter-based mobile application designed to pro
 - All requests are cached in temporary storage.
 - Drift is used to save the history.
 
+## Env files
+- Strucutre for env/demo files
+   ```json
+   {
+      "ENV": "demo",
+      "BASE_URL": "",
+      "COUNT_SUCCESSFUL_ATTEMPTS": 10,     
+      "REQUEST_DELAY_MILLISECONDS": 800
+   }
+   ```
+
+- Strucutre for env/release files
+   ```json
+   {
+      "ENV": "release",
+      "BASE_URL": ""
+   }
+   ```
+
+- Strucutre for env/dev files
+   ```json
+   {
+      "ENV": "dev",
+      "BASE_URL": ""
+   }
+   ```
+
 ## How to Run the Project
 
 Follow these steps to set up and run the Currency Converter App on your local machine.
@@ -38,31 +65,43 @@ Follow these steps to set up and run the Currency Converter App on your local ma
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/currency-converter-app.git
+   git clone https://github.com/alexandrogr/converter_currency.git
    cd currency-converter-app
+   ```
+
 2. **Install Dependencies**:
 - Run the following command to install all the required dependencies:
    ```bash
    flutter pub get
+   ```
+
 3. **Build Runner**:
 - Generating Drift database, routes, data classes and injectable classes code using `build_runner`:
   ```bash
   flutter pub run build_runner build --delete-conflicting-outputs
+  ```
+
 4. **Run the App on Android:**:
 - Connect an Android device or start an emulator.
 - Run the following command:
    ```bash
    flutter run
+   ```
 5. **Run the App on iOS:**:
 - Ensure Xcode is installed and configured.
 - Connect an iOS device or start a simulator.
 - Run the following command:
    ```bash
    flutter run
+   ```
+
 6. **Build the App:**:
 - To build the app for Android:
    ```bash
    flutter build apk
+   ```
+
 - To build the app for iOS:
    ```bash
    flutter build ios
+   ```

@@ -1,3 +1,6 @@
+import 'package:injectable/injectable.dart';
+
+@Singleton()
 class LocalCache {
   final Map<String, dynamic> _cache = {};
   T fromCache<T>(String key) => _cache[key] as T;

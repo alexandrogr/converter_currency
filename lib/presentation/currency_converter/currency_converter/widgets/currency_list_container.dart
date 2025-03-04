@@ -97,13 +97,6 @@ class CurrencyListContainer extends StatelessWidget with LogMixin {
                   : "Undefined state",
             ),
           ),
-
-          //   SliverToBoxAdapter(
-          //     child: SizedBox(
-          //       height: MediaQuery.paddingOf(context).bottom,
-          //     ),
-          //   ),
-          // ],
         );
       },
     );

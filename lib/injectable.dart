@@ -1,4 +1,3 @@
-import 'package:currency_calculator/core/database/local_cache.dart';
 import 'package:currency_calculator/injectable.config.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
@@ -12,7 +11,7 @@ final getIt = GetIt.instance;
 )
 void configureDependencies(String env) {
   getIt.init(environment: env);
-  getIt.registerSingleton(LocalCache());
+  // getIt.registerSingleton(LocalCache());
 }
 
 abstract class Env {

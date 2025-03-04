@@ -20,13 +20,17 @@ build_apk:
 	# @echo "Release with obfuscation to \"${OBFUSCATE_PATH}\"" #printing this log on console
 	flutter build apk --obfuscate --split-debug-info=${OBFUSCATE_PATH}
 
-build_apk_release:
-	# @echo "Release with obfuscation to \"${OBFUSCATE_PATH}\"" #printing this log on console
-	flutter build apk --obfuscate --split-debug-info=${OBFUSCATE_PATH} --dart-define-from-file=env/release.json --flavor=prod
-
 build_apk_demo:
 	# @echo "Release with obfuscation to \"${OBFUSCATE_PATH}\"" #printing this log on console
 	flutter build apk --obfuscate --split-debug-info=${OBFUSCATE_PATH} --dart-define-from-file=env/demo.json --flavor=dev
+
+build_apk_dev:
+	# @echo "Release with obfuscation to \"${OBFUSCATE_PATH}\"" #printing this log on console
+	flutter build apk --obfuscate --split-debug-info=${OBFUSCATE_PATH} --dart-define-from-file=env/dev.json --flavor=dev
+
+build_apk_release:
+	# @echo "Release with obfuscation to \"${OBFUSCATE_PATH}\"" #printing this log on console
+	flutter build apk --obfuscate --split-debug-info=${OBFUSCATE_PATH} --dart-define-from-file=env/release.json --flavor=prod
 
 build_appbundle_release:
 	# @echo "Release with obfuscation to \"${OBFUSCATE_PATH}\"" #printing this log on console
