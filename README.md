@@ -1,5 +1,8 @@
 # Currency Converter App
 
+
+<img src="./demo/demo.gif" alt="Currency Converter Demo" width="300" />
+
 The Currency Converter App is a Flutter-based mobile application designed to provide users with an easy and efficient way to convert currencies in real-time. The app leverages the **Drift** package for local database management, ensuring that users can access currency conversion data even when offline. Additionally, the app implements a **local cache** to store frequently accessed data, reducing the need for repeated network requests and improving overall performance.
 
 ## Features
@@ -63,5 +66,3 @@ Follow these steps to set up and run the Currency Converter App on your local ma
 - To build the app for iOS:
    ```bash
    flutter build ios
-## Demo preview
-![Currency Converter Demo](./demo/demo.gif)
