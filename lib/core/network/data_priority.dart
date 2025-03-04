@@ -1,0 +1,1 @@
+enum DataPriority { local, remote }

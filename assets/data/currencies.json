@@ -1,0 +1,143 @@
+[
+    {
+      "currencyCode": "USD",
+      "currencyName": "United States Dollar",
+      "countryCode": "US",
+      "countryName": "United States",
+      "icon": "🇺🇸"
+    },
+    {
+      "currencyCode": "EUR",
+      "currencyName": "Euro",
+      "countryCode": "EU",
+      "countryName": "European Union",
+      "icon": "🇪🇺"
+    },
+    {
+      "currencyCode": "JPY",
+      "currencyName": "Japanese Yen",
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "icon": "🇯🇵"
+    },
+    {
+      "currencyCode": "GBP",
+      "currencyName": "British Pound",
+      "countryCode": "GB",
+      "countryName": "United Kingdom",
+      "icon": "🇬🇧"
+    },
+    {
+      "currencyCode": "AUD",
+      "currencyName": "Australian Dollar",
+      "countryCode": "AU",
+      "countryName": "Australia",
+      "icon": "🇦🇺"
+    },
+    {
+      "currencyCode": "CAD",
+      "currencyName": "Canadian Dollar",
+      "countryCode": "CA",
+      "countryName": "Canada",
+      "icon": "🇨🇦"
+    },
+    {
+      "currencyCode": "CHF",
+      "currencyName": "Swiss Franc",
+      "countryCode": "CH",
+      "countryName": "Switzerland",
+      "icon": "🇨🇭"
+    },
+    {
+      "currencyCode": "CNY",
+      "currencyName": "Chinese Yuan",
+      "countryCode": "CN",
+      "countryName": "China",
+      "icon": "🇨🇳"
+    },
+    {
+      "currencyCode": "HKD",
+      "currencyName": "Hong Kong Dollar",
+      "countryCode": "HK",
+      "countryName": "Hong Kong",
+      "icon": "🇭🇰"
+    },
+    {
+      "currencyCode": "NZD",
+      "currencyName": "New Zealand Dollar",
+      "countryCode": "NZ",
+      "countryName": "New Zealand",
+      "icon": "🇳🇿"
+    },
+    {
+      "currencyCode": "SEK",
+      "currencyName": "Swedish Krona",
+      "countryCode": "SE",
+      "countryName": "Sweden",
+      "icon": "🇸🇪"
+    },
+    {
+      "currencyCode": "KRW",
+      "currencyName": "South Korean Won",
+      "countryCode": "KR",
+      "countryName": "South Korea",
+      "icon": "🇰🇷"
+    },
+    {
+      "currencyCode": "SGD",
+      "currencyName": "Singapore Dollar",
+      "countryCode": "SG",
+      "countryName": "Singapore",
+      "icon": "🇸🇬"
+    },
+    {
+      "currencyCode": "NOK",
+      "currencyName": "Norwegian Krone",
+      "countryCode": "NO",
+      "countryName": "Norway",
+      "icon": "🇳🇴"
+    },
+    {
+      "currencyCode": "MXN",
+      "currencyName": "Mexican Peso",
+      "countryCode": "MX",
+      "countryName": "Mexico",
+      "icon": "🇲🇽"
+    },
+    {
+      "currencyCode": "INR",
+      "currencyName": "Indian Rupee",
+      "countryCode": "IN",
+      "countryName": "India",
+      "icon": "🇮🇳"
+    },
+    {
+      "currencyCode": "RUB",
+      "currencyName": "Russian Ruble",
+      "countryCode": "RU",
+      "countryName": "Russia",
+      "icon": "🇷🇺"
+    },
+    {
+      "currencyCode": "BRL",
+      "currencyName": "Brazilian Real",
+      "countryCode": "BR",
+      "countryName": "Brazil",
+      "icon": "🇧🇷"
+    },
+    {
+      "currencyCode": "ZAR",
+      "currencyName": "South African Rand",
+      "countryCode": "ZA",
+      "countryName": "South Africa",
+      "icon": "🇿🇦"
+    },
+    {
+      "currencyCode": "TRY",
+      "currencyName": "Turkish Lira",
+      "countryCode": "TR",
+      "countryName": "Turkey",
+      "icon": "🇹🇷"
+    }
+  ]
+  
